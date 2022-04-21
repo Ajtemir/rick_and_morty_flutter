@@ -30,7 +30,7 @@ class PersonCacheImage extends StatelessWidget {
     return CachedNetworkImage(
       width: width,
       height: height,
-      imageUrl: imageUrl ?? '',
+      imageUrl: imageUrl,
       imageBuilder: (context, imageProvider) {
         return _imageWidget(imageProvider);
       },
